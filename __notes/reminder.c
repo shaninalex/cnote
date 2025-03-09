@@ -4,6 +4,9 @@ This example application show how to use libnotify
 To compile:
 gcc `pkg-config --cflags gtk4 libnotify` reminder.c `pkg-config --libs gtk4 libnotify`
 
+Install:
+Fedora: sudo dnf install libnotify-devel
+
 */
 
 #include <gtk/gtk.h>
