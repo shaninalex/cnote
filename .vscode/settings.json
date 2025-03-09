@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "time.h": "c",
+        "sql.h": "c",
+        "sqltypes.h": "c",
+        "notification.h": "c"
+    }
+}

@@ -1,0 +1,4 @@
+bin/*
+a.out
+*.db
+*.sqlite3
