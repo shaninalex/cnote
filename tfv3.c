@@ -5,6 +5,7 @@ app_activate (GApplication *app) {
   g_printerr ("You need a filename argument.\n");
 }
 
+
 static void
 app_open (GApplication *app, GFile **files, int n_files, char *hint) {
   GtkWidget *win;
