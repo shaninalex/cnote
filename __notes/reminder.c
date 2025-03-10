@@ -30,7 +30,7 @@ check_reminders (gpointer user_data) {
 
   for (int i = 0; i < reminder_count; i++) {
     if (reminders[i].reminder_time <= now) {
-      NotifyNotification *notification = notify_notification_new ("Reminder", reminders[i].message, "dialog-information");
+      NotifyNotification *notification = notify_notification_new ("Reminder", reminders[i].message, NULL);
       notify_notification_show (notification, NULL);
       for (int j = i; j < reminder_count - 1; j++) {
         reminders[j] = reminders[j + 1];
@@ -67,7 +67,7 @@ main (int argc, char **argv) {
   int stat;
   GtkApplication *app;
 
-  add_reminder (time (NULL) + 10, "Take a break!");
+  add_reminder (time (NULL) + 1, "Take a break!");
 
   tmp = notify_init ("app");
   if (!tmp) {
